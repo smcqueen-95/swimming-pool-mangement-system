@@ -64,7 +64,7 @@
             // 
             this.buttonRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRefresh.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRefresh.Location = new System.Drawing.Point(497, 434);
+            this.buttonRefresh.Location = new System.Drawing.Point(497, 486);
             this.buttonRefresh.Name = "buttonRefresh";
             this.buttonRefresh.Size = new System.Drawing.Size(265, 35);
             this.buttonRefresh.TabIndex = 32;
@@ -75,7 +75,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(162, 120);
+            this.dataGridView1.Location = new System.Drawing.Point(165, 172);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(873, 308);
             this.dataGridView1.TabIndex = 31;
@@ -87,7 +87,7 @@
             this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEdit.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonEdit.Location = new System.Drawing.Point(871, 91);
+            this.buttonEdit.Location = new System.Drawing.Point(874, 143);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(164, 23);
             this.buttonEdit.TabIndex = 30;
@@ -101,7 +101,7 @@
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonAdd.Location = new System.Drawing.Point(734, 91);
+            this.buttonAdd.Location = new System.Drawing.Point(737, 143);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(131, 23);
             this.buttonAdd.TabIndex = 29;
@@ -113,7 +113,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(573, 99);
+            this.label4.Location = new System.Drawing.Point(576, 151);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 18);
             this.label4.TabIndex = 28;
@@ -167,7 +167,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Swimming_Pool_Management_System.Properties.Resources.Login;
-            this.pictureBox1.Location = new System.Drawing.Point(-716, -195);
+            this.pictureBox1.Location = new System.Drawing.Point(-716, -170);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(872, 867);
             this.pictureBox1.TabIndex = 5;
@@ -179,7 +179,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(301, 91);
+            this.button1.Location = new System.Drawing.Point(301, 143);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(164, 23);
@@ -194,18 +194,18 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(164, 91);
+            this.button2.Location = new System.Drawing.Point(164, 143);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 23);
             this.button2.TabIndex = 36;
-            this.button2.Text = "Add Assessment";
+            this.button2.Text = "Assessment";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBoxSearch
             // 
             this.textBoxSearch.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxSearch.Location = new System.Drawing.Point(165, 65);
+            this.textBoxSearch.Location = new System.Drawing.Point(165, 114);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(232, 20);
             this.textBoxSearch.TabIndex = 37;
@@ -216,7 +216,7 @@
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonSearch.Location = new System.Drawing.Point(403, 65);
+            this.buttonSearch.Location = new System.Drawing.Point(403, 114);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(62, 23);
             this.buttonSearch.TabIndex = 38;
@@ -229,7 +229,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1047, 503);
+            this.ClientSize = new System.Drawing.Size(1047, 553);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.button2);

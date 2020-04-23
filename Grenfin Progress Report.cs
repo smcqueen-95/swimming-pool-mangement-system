@@ -62,5 +62,12 @@ namespace Swimming_Pool_Management_System
             dataGridView1.DataSource = studProg.getStudentsProgress(command);
             dataGridView1.AllowUserToAddRows = false;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Progress_Report addProgRep = new Progress_Report();
+            addProgRep.Show();
+        }
     }
 }

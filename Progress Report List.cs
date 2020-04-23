@@ -80,5 +80,12 @@ namespace Swimming_Pool_Management_System
             string valueToSearch = textBoxSearch.Text.ToString();
             searchData(valueToSearch);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Progress_Report addProgRep = new Progress_Report();
+            addProgRep.Show();
+        }
     }
 }

@@ -20,8 +20,8 @@ namespace Swimming_Pool_Management_System
         private void grenadaBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Grenada_Team grenadaTeam = new Grenada_Team();
-            grenadaTeam.Show();
+            Grenada_Swim_Team grenSwim = new Grenada_Swim_Team();
+            grenSwim.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)

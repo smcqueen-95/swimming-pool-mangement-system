@@ -31,6 +31,24 @@ namespace Swimming_Pool_Management_System
                 Dashboard dashboard = new Dashboard();
                 dashboard.Show();
             }
+            else if (labelUser.Text == "Grenfin Team Leader")
+            {
+                this.Hide();
+                Grenfin grenfin = new Grenfin();
+                grenfin.Show();
+            }
+            else if (labelUser.Text == "Sailfish Team Leader")
+            {
+                this.Hide();
+                Sailfish sailfish = new Sailfish();
+                sailfish.Show();
+            }
+            else if (labelUser.Text == "Dolphin Team Leader")
+            {
+                this.Hide();
+                Dolphin dolphin = new Dolphin();
+                dolphin.Show();
+            }
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)

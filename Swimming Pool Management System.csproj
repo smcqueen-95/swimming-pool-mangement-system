@@ -98,6 +98,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dolphin Assessments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dolphin Assessments.Designer.cs">
+      <DependentUpon>Dolphin Assessments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dolphin CoachAtten.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,12 @@
     <Compile Include="Dolphin Student Finance.Designer.cs">
       <DependentUpon>Dolphin Student Finance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dolphin Swimmers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dolphin Swimmers.Designer.cs">
+      <DependentUpon>Dolphin Swimmers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dolphin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,12 @@
       <DependentUpon>Edit_Remove_Coach.cs</DependentUpon>
     </Compile>
     <Compile Include="GLOBAL.cs" />
+    <Compile Include="Grenada Swim Team.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenada Swim Team.Designer.cs">
+      <DependentUpon>Grenada Swim Team.cs</DependentUpon>
+    </Compile>
     <Compile Include="Grenada Team CoachAtten.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +201,12 @@
     <Compile Include="Grenada Team.Designer.cs">
       <DependentUpon>Grenada Team.cs</DependentUpon>
     </Compile>
+    <Compile Include="Grenfin Assessments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenfin Assessments.Designer.cs">
+      <DependentUpon>Grenfin Assessments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Grenfin CoachAtten.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +236,12 @@
     </Compile>
     <Compile Include="Grenfin Student Finance.Designer.cs">
       <DependentUpon>Grenfin Student Finance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grenfin Swimmers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenfin Swimmers.Designer.cs">
+      <DependentUpon>Grenfin Swimmers.cs</DependentUpon>
     </Compile>
     <Compile Include="Grenfin.cs">
       <SubType>Form</SubType>
@@ -358,6 +388,9 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dolphin Assessments.resx">
+      <DependentUpon>Dolphin Assessments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dolphin CoachAtten.resx">
       <DependentUpon>Dolphin CoachAtten.cs</DependentUpon>
     </EmbeddedResource>
@@ -373,6 +406,9 @@
     <EmbeddedResource Include="Dolphin Student Finance.resx">
       <DependentUpon>Dolphin Student Finance.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dolphin Swimmers.resx">
+      <DependentUpon>Dolphin Swimmers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dolphin.resx">
       <DependentUpon>Dolphin.cs</DependentUpon>
     </EmbeddedResource>
@@ -384,6 +420,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Edit_Remove_Coach.resx">
       <DependentUpon>Edit_Remove_Coach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenada Swim Team.resx">
+      <DependentUpon>Grenada Swim Team.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grenada Team CoachAtten.resx">
       <DependentUpon>Grenada Team CoachAtten.cs</DependentUpon>
@@ -400,6 +439,9 @@
     <EmbeddedResource Include="Grenada Team.resx">
       <DependentUpon>Grenada Team.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Grenfin Assessments.resx">
+      <DependentUpon>Grenfin Assessments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Grenfin CoachAtten.resx">
       <DependentUpon>Grenfin CoachAtten.cs</DependentUpon>
     </EmbeddedResource>
@@ -414,6 +456,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Grenfin Student Finance.resx">
       <DependentUpon>Grenfin Student Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenfin Swimmers.resx">
+      <DependentUpon>Grenfin Swimmers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grenfin.resx">
       <DependentUpon>Grenfin.cs</DependentUpon>

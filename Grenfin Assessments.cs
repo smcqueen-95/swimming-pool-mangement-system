@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace Swimming_Pool_Management_System
 {
-    public partial class Sailfish_Assessments : Form
+    public partial class Grenfin_Assessments : Form
     {
         MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=swimming_pool_db");
 
@@ -19,7 +19,7 @@ namespace Swimming_Pool_Management_System
         MySqlDataAdapter adapter;
         DataTable table;
 
-        public Sailfish_Assessments()
+        public Grenfin_Assessments()
         {
             InitializeComponent();
         }
@@ -34,14 +34,14 @@ namespace Swimming_Pool_Management_System
             if (labelUser.Text == "Admin")
             {
                 this.Hide();
-                Sailfish sailfish = new Sailfish();
-                sailfish.Show();
+                Grenfin grenfin = new Grenfin();
+                grenfin.Show();
             }
-            else if (labelUser.Text == "Sailfish Team Leader")
+            else if (labelUser.Text == "Grenfin Team Leader")
             {
                 this.Hide();
-                Sailfish sailfish = new Sailfish();
-                sailfish.Show();
+                Grenfin grenfin = new Grenfin();
+                grenfin.Show();
             }
         }
 
@@ -55,7 +55,7 @@ namespace Swimming_Pool_Management_System
 
         public void searchData(string valueToSearch)
         {
-            string query = "SELECT * FROM `assessment` WHERE CONCAT(`ID`, `First Name`, `Last Name`, `Age`, `Date`, `Swim Team/s`, `Swim Group`, `Grade`) like '%" + valueToSearch + "%' AND `Swim Team/s`= 'Sailfish'";
+            string query = "SELECT * FROM `assessment` WHERE CONCAT(`ID`, `First Name`, `Last Name`, `Age`, `Date`, `Swim Team/s`, `Swim Group`, `Grade`) like '%" + valueToSearch + "%' AND `Swim Team/s`= 'Grenfin'";
             command = new MySqlCommand(query, connection);
             adapter = new MySqlDataAdapter(command);
             table = new DataTable();
@@ -63,10 +63,10 @@ namespace Swimming_Pool_Management_System
             dataGridView1.DataSource = assessment.getAssessments(command);
         }
 
-        private void Sailfish_Assessments_Load(object sender, EventArgs e)
+        private void Grenfin_Assessments_Load(object sender, EventArgs e)
         {
             //populating the datagridview with swimmer's data
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `assessment` WHERE `Swim Team/s`='Sailfish'");
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `assessment` WHERE `Swim Team/s`='Grenfin'");
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 30;
             dataGridView1.DataSource = assessment.getAssessments(command);
@@ -79,7 +79,7 @@ namespace Swimming_Pool_Management_System
         private void buttonRefresh_Click(object sender, EventArgs e)
         {
             //populating the datagridview with swimmer's data
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `assessment` WHERE `Swim Team/s`='Sailfish'");
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `assessment` WHERE `Swim Team/s`='Grenfin'");
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 30;
             dataGridView1.DataSource = assessment.getAssessments(command);

@@ -28,14 +28,14 @@ namespace Swimming_Pool_Management_System
             if (labelUser.Text == "Admin")
             {
                 this.Hide();
-                Swimmer_List swimmerList = new Swimmer_List();
-                swimmerList.Show();
+                Grenada_Swim_Team grenSwim = new Grenada_Swim_Team();
+                grenSwim.Show();
             }
             else if (labelUser.Text == "Grenada Team Leader")
             {
                 this.Hide();
-                Grenada_Team_Dashboard grenadaTeamDash = new Grenada_Team_Dashboard();
-                grenadaTeamDash.Show();
+                Grenada_Swim_Team grenSwim = new Grenada_Swim_Team();
+                grenSwim.Show();
             }
         }
 

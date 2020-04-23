@@ -83,9 +83,12 @@ namespace Swimming_Pool_Management_System
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Pool_Maintenance poolMain = new Pool_Maintenance();
-            poolMain.Show();
+            if (labelUser.Text == "Admin")
+            {
+                this.Hide();
+                Pool_Maintenance poolMain = new Pool_Maintenance();
+                poolMain.Show();
+            }
         }
     }
 }

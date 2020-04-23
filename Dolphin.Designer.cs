@@ -35,28 +35,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.learnToSwimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.preBeginnersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.beginnersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.advanceBeginnersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.intermediateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.learnToTrainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.juniorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.advanceJuniorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.seniorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.advanceSeniorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assesmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.learnToSwimToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.preBeginnerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.beginnerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.advanceBeginnersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.intermediateToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.learnToTrainToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.juniorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.advanceJuniorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.seniorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.advanceSeniorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelUser = new System.Windows.Forms.Label();
             this.progressReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelUser = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
@@ -124,200 +105,37 @@
             this.menuStrip1.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.learnToSwimToolStripMenuItem,
-            this.learnToTrainToolStripMenuItem,
             this.assesmentsToolStripMenuItem,
             this.progressReportToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(333, 206);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(557, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(425, 24);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // learnToSwimToolStripMenuItem
             // 
             this.learnToSwimToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
-            this.learnToSwimToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.preBeginnersToolStripMenuItem,
-            this.beginnersToolStripMenuItem,
-            this.advanceBeginnersToolStripMenuItem,
-            this.intermediateToolStripMenuItem});
             this.learnToSwimToolStripMenuItem.Name = "learnToSwimToolStripMenuItem";
-            this.learnToSwimToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
-            this.learnToSwimToolStripMenuItem.Text = "Learn to Swim";
-            // 
-            // preBeginnersToolStripMenuItem
-            // 
-            this.preBeginnersToolStripMenuItem.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.preBeginnersToolStripMenuItem.Name = "preBeginnersToolStripMenuItem";
-            this.preBeginnersToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.preBeginnersToolStripMenuItem.Text = "Pre Beginner";
-            this.preBeginnersToolStripMenuItem.Click += new System.EventHandler(this.preBeginnersToolStripMenuItem_Click);
-            // 
-            // beginnersToolStripMenuItem
-            // 
-            this.beginnersToolStripMenuItem.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.beginnersToolStripMenuItem.Name = "beginnersToolStripMenuItem";
-            this.beginnersToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.beginnersToolStripMenuItem.Text = "Beginner";
-            this.beginnersToolStripMenuItem.Click += new System.EventHandler(this.beginnersToolStripMenuItem_Click);
-            // 
-            // advanceBeginnersToolStripMenuItem
-            // 
-            this.advanceBeginnersToolStripMenuItem.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.advanceBeginnersToolStripMenuItem.Name = "advanceBeginnersToolStripMenuItem";
-            this.advanceBeginnersToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.advanceBeginnersToolStripMenuItem.Text = "Advance Beginner";
-            this.advanceBeginnersToolStripMenuItem.Click += new System.EventHandler(this.advanceBeginnersToolStripMenuItem_Click);
-            // 
-            // intermediateToolStripMenuItem
-            // 
-            this.intermediateToolStripMenuItem.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.intermediateToolStripMenuItem.Name = "intermediateToolStripMenuItem";
-            this.intermediateToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.intermediateToolStripMenuItem.Text = "Intermediate";
-            this.intermediateToolStripMenuItem.Click += new System.EventHandler(this.intermediateToolStripMenuItem_Click);
-            // 
-            // learnToTrainToolStripMenuItem
-            // 
-            this.learnToTrainToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
-            this.learnToTrainToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.juniorToolStripMenuItem,
-            this.advanceJuniorToolStripMenuItem,
-            this.seniorToolStripMenuItem,
-            this.advanceSeniorToolStripMenuItem});
-            this.learnToTrainToolStripMenuItem.Name = "learnToTrainToolStripMenuItem";
-            this.learnToTrainToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
-            this.learnToTrainToolStripMenuItem.Text = "Learn to Train";
-            // 
-            // juniorToolStripMenuItem
-            // 
-            this.juniorToolStripMenuItem.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.juniorToolStripMenuItem.Name = "juniorToolStripMenuItem";
-            this.juniorToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.juniorToolStripMenuItem.Text = "Junior";
-            this.juniorToolStripMenuItem.Click += new System.EventHandler(this.juniorToolStripMenuItem_Click);
-            // 
-            // advanceJuniorToolStripMenuItem
-            // 
-            this.advanceJuniorToolStripMenuItem.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.advanceJuniorToolStripMenuItem.Name = "advanceJuniorToolStripMenuItem";
-            this.advanceJuniorToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.advanceJuniorToolStripMenuItem.Text = "Advance Junior";
-            this.advanceJuniorToolStripMenuItem.Click += new System.EventHandler(this.advanceJuniorToolStripMenuItem_Click);
-            // 
-            // seniorToolStripMenuItem
-            // 
-            this.seniorToolStripMenuItem.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.seniorToolStripMenuItem.Name = "seniorToolStripMenuItem";
-            this.seniorToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.seniorToolStripMenuItem.Text = "Senior";
-            this.seniorToolStripMenuItem.Click += new System.EventHandler(this.seniorToolStripMenuItem_Click);
-            // 
-            // advanceSeniorToolStripMenuItem
-            // 
-            this.advanceSeniorToolStripMenuItem.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.advanceSeniorToolStripMenuItem.Name = "advanceSeniorToolStripMenuItem";
-            this.advanceSeniorToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.advanceSeniorToolStripMenuItem.Text = "Advance Senior";
-            this.advanceSeniorToolStripMenuItem.Click += new System.EventHandler(this.advanceSeniorToolStripMenuItem_Click);
+            this.learnToSwimToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.learnToSwimToolStripMenuItem.Text = "Swimmers";
+            this.learnToSwimToolStripMenuItem.Click += new System.EventHandler(this.learnToSwimToolStripMenuItem_Click);
             // 
             // assesmentsToolStripMenuItem
             // 
             this.assesmentsToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
-            this.assesmentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.learnToSwimToolStripMenuItem1,
-            this.learnToTrainToolStripMenuItem1});
             this.assesmentsToolStripMenuItem.Name = "assesmentsToolStripMenuItem";
             this.assesmentsToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
             this.assesmentsToolStripMenuItem.Text = "Assesments";
+            this.assesmentsToolStripMenuItem.Click += new System.EventHandler(this.assesmentsToolStripMenuItem_Click);
             // 
-            // learnToSwimToolStripMenuItem1
+            // progressReportToolStripMenuItem
             // 
-            this.learnToSwimToolStripMenuItem1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.learnToSwimToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.preBeginnerToolStripMenuItem,
-            this.beginnerToolStripMenuItem,
-            this.advanceBeginnersToolStripMenuItem1,
-            this.intermediateToolStripMenuItem1});
-            this.learnToSwimToolStripMenuItem1.Name = "learnToSwimToolStripMenuItem1";
-            this.learnToSwimToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.learnToSwimToolStripMenuItem1.Text = "Learn to Swim";
-            // 
-            // preBeginnerToolStripMenuItem
-            // 
-            this.preBeginnerToolStripMenuItem.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.preBeginnerToolStripMenuItem.Name = "preBeginnerToolStripMenuItem";
-            this.preBeginnerToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.preBeginnerToolStripMenuItem.Text = "Pre Beginner";
-            this.preBeginnerToolStripMenuItem.Click += new System.EventHandler(this.preBeginnerToolStripMenuItem_Click);
-            // 
-            // beginnerToolStripMenuItem
-            // 
-            this.beginnerToolStripMenuItem.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.beginnerToolStripMenuItem.Name = "beginnerToolStripMenuItem";
-            this.beginnerToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.beginnerToolStripMenuItem.Text = "Beginner";
-            this.beginnerToolStripMenuItem.Click += new System.EventHandler(this.beginnerToolStripMenuItem_Click);
-            // 
-            // advanceBeginnersToolStripMenuItem1
-            // 
-            this.advanceBeginnersToolStripMenuItem1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.advanceBeginnersToolStripMenuItem1.Name = "advanceBeginnersToolStripMenuItem1";
-            this.advanceBeginnersToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
-            this.advanceBeginnersToolStripMenuItem1.Text = "Advance Beginner";
-            this.advanceBeginnersToolStripMenuItem1.Click += new System.EventHandler(this.advanceBeginnersToolStripMenuItem1_Click);
-            // 
-            // intermediateToolStripMenuItem1
-            // 
-            this.intermediateToolStripMenuItem1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.intermediateToolStripMenuItem1.Name = "intermediateToolStripMenuItem1";
-            this.intermediateToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
-            this.intermediateToolStripMenuItem1.Text = "Intermediate";
-            this.intermediateToolStripMenuItem1.Click += new System.EventHandler(this.intermediateToolStripMenuItem1_Click);
-            // 
-            // learnToTrainToolStripMenuItem1
-            // 
-            this.learnToTrainToolStripMenuItem1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.learnToTrainToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.juniorToolStripMenuItem1,
-            this.advanceJuniorToolStripMenuItem1,
-            this.seniorToolStripMenuItem1,
-            this.advanceSeniorToolStripMenuItem1});
-            this.learnToTrainToolStripMenuItem1.Name = "learnToTrainToolStripMenuItem1";
-            this.learnToTrainToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.learnToTrainToolStripMenuItem1.Text = "Learn to Train";
-            // 
-            // juniorToolStripMenuItem1
-            // 
-            this.juniorToolStripMenuItem1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.juniorToolStripMenuItem1.Name = "juniorToolStripMenuItem1";
-            this.juniorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.juniorToolStripMenuItem1.Text = "Junior";
-            this.juniorToolStripMenuItem1.Click += new System.EventHandler(this.juniorToolStripMenuItem1_Click);
-            // 
-            // advanceJuniorToolStripMenuItem1
-            // 
-            this.advanceJuniorToolStripMenuItem1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.advanceJuniorToolStripMenuItem1.Name = "advanceJuniorToolStripMenuItem1";
-            this.advanceJuniorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.advanceJuniorToolStripMenuItem1.Text = "Advance Junior";
-            this.advanceJuniorToolStripMenuItem1.Click += new System.EventHandler(this.advanceJuniorToolStripMenuItem1_Click);
-            // 
-            // seniorToolStripMenuItem1
-            // 
-            this.seniorToolStripMenuItem1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.seniorToolStripMenuItem1.Name = "seniorToolStripMenuItem1";
-            this.seniorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.seniorToolStripMenuItem1.Text = "Senior";
-            this.seniorToolStripMenuItem1.Click += new System.EventHandler(this.seniorToolStripMenuItem1_Click);
-            // 
-            // advanceSeniorToolStripMenuItem1
-            // 
-            this.advanceSeniorToolStripMenuItem1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.advanceSeniorToolStripMenuItem1.Name = "advanceSeniorToolStripMenuItem1";
-            this.advanceSeniorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.advanceSeniorToolStripMenuItem1.Text = "Advance Senior";
-            this.advanceSeniorToolStripMenuItem1.Click += new System.EventHandler(this.advanceSeniorToolStripMenuItem1_Click);
+            this.progressReportToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
+            this.progressReportToolStripMenuItem.Name = "progressReportToolStripMenuItem";
+            this.progressReportToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
+            this.progressReportToolStripMenuItem.Text = "Progress Report";
+            this.progressReportToolStripMenuItem.Click += new System.EventHandler(this.progressReportToolStripMenuItem_Click);
             // 
             // labelUser
             // 
@@ -327,14 +145,6 @@
             this.labelUser.Name = "labelUser";
             this.labelUser.Size = new System.Drawing.Size(0, 14);
             this.labelUser.TabIndex = 25;
-            // 
-            // progressReportToolStripMenuItem
-            // 
-            this.progressReportToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
-            this.progressReportToolStripMenuItem.Name = "progressReportToolStripMenuItem";
-            this.progressReportToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
-            this.progressReportToolStripMenuItem.Text = "Progress Report";
-            this.progressReportToolStripMenuItem.Click += new System.EventHandler(this.progressReportToolStripMenuItem_Click);
             // 
             // pictureBox2
             // 
@@ -398,26 +208,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem learnToSwimToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem preBeginnersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem beginnersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem advanceBeginnersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem intermediateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem learnToTrainToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem juniorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem advanceJuniorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem seniorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem advanceSeniorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem assesmentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem learnToSwimToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem preBeginnerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem beginnerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem advanceBeginnersToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem intermediateToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem learnToTrainToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem juniorToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem advanceJuniorToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem seniorToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem advanceSeniorToolStripMenuItem1;
         private System.Windows.Forms.Label labelUser;
         private System.Windows.Forms.ToolStripMenuItem progressReportToolStripMenuItem;
     }

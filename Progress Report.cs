@@ -98,6 +98,24 @@ namespace Swimming_Pool_Management_System
                 Sailfish_Progress_Report sailfishProgRep = new Sailfish_Progress_Report();
                 sailfishProgRep.Show();
             }
+            else if (labelUser.Text == "Grenfin Team Leader")
+            {
+                this.Close();
+                Grenfin_Progress_Report GrenProgrep = new Grenfin_Progress_Report();
+                GrenProgrep.Show();
+            }
+            else if (labelUser.Text == "Dolphin Team Leader")
+            {
+                this.Close();
+                Dolphin_Progress_Report dolphinProgRep = new Dolphin_Progress_Report();
+                dolphinProgRep.Show();
+            }
+            else if (labelUser.Text == "Grenada Team Leader")
+            {
+                this.Close();
+                Grenada_Team_Progress_Report grenProgRep = new Grenada_Team_Progress_Report();
+                grenProgRep.Show();
+            }
 
         }
 

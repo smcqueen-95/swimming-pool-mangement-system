@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace Swimming_Pool_Management_System
 {
-    public partial class Sailfish_Assessments : Form
+    public partial class Dolphin_Swimmers : Form
     {
         MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=swimming_pool_db");
 
@@ -19,7 +19,7 @@ namespace Swimming_Pool_Management_System
         MySqlDataAdapter adapter;
         DataTable table;
 
-        public Sailfish_Assessments()
+        public Dolphin_Swimmers()
         {
             InitializeComponent();
         }
@@ -34,14 +34,14 @@ namespace Swimming_Pool_Management_System
             if (labelUser.Text == "Admin")
             {
                 this.Hide();
-                Sailfish sailfish = new Sailfish();
-                sailfish.Show();
+                Dolphin dolphin = new Dolphin();
+                dolphin.Show();
             }
-            else if (labelUser.Text == "Sailfish Team Leader")
+            else if (labelUser.Text == "Dolphin Team Leader")
             {
                 this.Hide();
-                Sailfish sailfish = new Sailfish();
-                sailfish.Show();
+                Dolphin dolphin = new Dolphin();
+                dolphin.Show();
             }
         }
 
@@ -51,46 +51,47 @@ namespace Swimming_Pool_Management_System
             searchData(valueToSearch);
         }
 
-        ASSESSMENT assessment = new ASSESSMENT();
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Edit_Remove_Swimmer editRemoveSwimmer = new Edit_Remove_Swimmer();
+            editRemoveSwimmer.Show();
+        }
+
+        SWIMMER swimmer = new SWIMMER();
 
         public void searchData(string valueToSearch)
         {
-            string query = "SELECT * FROM `assessment` WHERE CONCAT(`ID`, `First Name`, `Last Name`, `Age`, `Date`, `Swim Team/s`, `Swim Group`, `Grade`) like '%" + valueToSearch + "%' AND `Swim Team/s`= 'Sailfish'";
+            string query = "SELECT * FROM `swimmers` WHERE CONCAT(`ID`, `First Name`, `Last Name`, `Gender`, `Birth Date`, `Age`, `School`, `Medical`, `Swim Team/s`, `Swim Group`, `Parent/s Name`, `Parent/s Address`, `Parent/s Number`, `Parent Email`) like '%" + valueToSearch + "%' AND `Swim Team/s`= 'Dolphin'";
             command = new MySqlCommand(query, connection);
             adapter = new MySqlDataAdapter(command);
             table = new DataTable();
             adapter.Fill(table);
-            dataGridView1.DataSource = assessment.getAssessments(command);
+            dataGridView1.DataSource = swimmer.getSwimmers(command);
         }
 
-        private void Sailfish_Assessments_Load(object sender, EventArgs e)
+        private void Dolphin_Swimmers_Load(object sender, EventArgs e)
         {
             //populating the datagridview with swimmer's data
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `assessment` WHERE `Swim Team/s`='Sailfish'");
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `swimmers` WHERE `Swim Team/s`='Dolphin'");
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 30;
-            dataGridView1.DataSource = assessment.getAssessments(command);
+            dataGridView1.DataSource = swimmer.getSwimmers(command);
             dataGridView1.AllowUserToAddRows = false;
 
             labelUser.Text = GLOBAL.userType;
+
             searchData("");
         }
 
         private void buttonRefresh_Click(object sender, EventArgs e)
         {
             //populating the datagridview with swimmer's data
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `assessment` WHERE `Swim Team/s`='Sailfish'");
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `swimmers` WHERE `Swim Team/s`='Dolphin'");
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 30;
-            dataGridView1.DataSource = assessment.getAssessments(command);
+            dataGridView1.DataSource = swimmer.getSwimmers(command);
             dataGridView1.AllowUserToAddRows = false;
-        }
-
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Add_Assessment addAss = new Add_Assessment();
-            addAss.Show();
         }
     }
 }

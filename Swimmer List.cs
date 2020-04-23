@@ -136,8 +136,8 @@ namespace Swimming_Pool_Management_System
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Add_Assessment addAss = new Add_Assessment();
-            addAss.Show();
+            Assessment_List assList = new Assessment_List();
+            assList.Show();
         }
         
     }

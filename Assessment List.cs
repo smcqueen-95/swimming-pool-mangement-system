@@ -84,8 +84,8 @@ namespace Swimming_Pool_Management_System
             if (labelUser.Text == "Admin")
             {
                 this.Hide();
-                Dashboard dashboard = new Dashboard();
-                dashboard.Show();
+                Swimmer_List swimList = new Swimmer_List();
+                swimList.Show();
             }
 
         }

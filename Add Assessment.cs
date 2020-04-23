@@ -34,8 +34,20 @@ namespace Swimming_Pool_Management_System
             else if (labelUser.Text == "Sailfish Team Leader")
             {
                 this.Hide();
-                Sailfish sailfish = new Sailfish();
-                sailfish.Show();
+                Sailfish_Assessments sailfishAss = new Sailfish_Assessments();
+                sailfishAss.Show();
+            }
+            else if (labelUser.Text == "Grenfin Team Leader")
+            {
+                this.Hide();
+                Grenfin_Assessments grenfinAss = new Grenfin_Assessments();
+                grenfinAss.Show();
+            }
+            else if (labelUser.Text == "Dolphin Team Leader")
+            {
+                this.Hide();
+                Dolphin_Assessments dolphinAss = new Dolphin_Assessments();
+                dolphinAss.Show();
             }
         }
 

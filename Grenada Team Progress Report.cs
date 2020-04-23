@@ -28,14 +28,14 @@ namespace Swimming_Pool_Management_System
             if (labelUser.Text == "Admin")
             {
                 this.Hide();
-                Dolphin dolphin = new Dolphin();
-                dolphin.Show();
+                Grenada_Swim_Team grenSwim = new Grenada_Swim_Team();
+                grenSwim.Show();
             }
             else if (labelUser.Text == "Grenada Team Leader")
             {
                 this.Hide();
-                Grenada_Team_Dashboard grenTeamDash = new Grenada_Team_Dashboard();
-                grenTeamDash.Show();
+                Grenada_Swim_Team grenSwim = new Grenada_Swim_Team();
+                grenSwim.Show();
             }
         }
 
@@ -61,6 +61,13 @@ namespace Swimming_Pool_Management_System
             dataGridView1.RowTemplate.Height = 30;
             dataGridView1.DataSource = studProg.getStudentsProgress(command);
             dataGridView1.AllowUserToAddRows = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Progress_Report addProgRep = new Progress_Report();
+            addProgRep.Show();
         }
     }
 }
