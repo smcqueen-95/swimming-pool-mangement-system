@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B18458F-54A7-4018-B7D4-76D213EB2F85}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Swimming_Pool_Management_System</RootNamespace>
+    <AssemblyName>Swimming Pool Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Coach Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Coach Attendance.Designer.cs">
+      <DependentUpon>Add Coach Attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add New Coach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add New Coach.Designer.cs">
+      <DependentUpon>Add New Coach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Swimmer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Swimmer.Designer.cs">
+      <DependentUpon>Add Swimmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Assessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Assessment.Designer.cs">
+      <DependentUpon>Add Assessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assessment List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assessment List.Designer.cs">
+      <DependentUpon>Assessment List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT.cs" />
+    <Compile Include="Coach Attendance List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coach Attendance List.Designer.cs">
+      <DependentUpon>Coach Attendance List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COACHATTENDANCE.cs" />
+    <Compile Include="Coaches Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coaches Form.Designer.cs">
+      <DependentUpon>Coaches Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COACHES.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dolphin CoachAtten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dolphin CoachAtten.Designer.cs">
+      <DependentUpon>Dolphin CoachAtten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dolphin Coaches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dolphin Coaches.Designer.cs">
+      <DependentUpon>Dolphin Coaches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dolphin Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dolphin Dashboard.Designer.cs">
+      <DependentUpon>Dolphin Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dolphin Progress Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dolphin Progress Report.Designer.cs">
+      <DependentUpon>Dolphin Progress Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dolphin Student Finance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dolphin Student Finance.Designer.cs">
+      <DependentUpon>Dolphin Student Finance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dolphin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dolphin.Designer.cs">
+      <DependentUpon>Dolphin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Remove Student Finance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Remove Student Finance.Designer.cs">
+      <DependentUpon>Edit Remove Student Finance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Remove Swimmer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Remove Swimmer.Designer.cs">
+      <DependentUpon>Edit Remove Swimmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Remove_Coach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Remove_Coach.Designer.cs">
+      <DependentUpon>Edit_Remove_Coach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLOBAL.cs" />
+    <Compile Include="Grenada Team CoachAtten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenada Team CoachAtten.Designer.cs">
+      <DependentUpon>Grenada Team CoachAtten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grenada Team Coaches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenada Team Coaches.Designer.cs">
+      <DependentUpon>Grenada Team Coaches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grenada Team Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenada Team Dashboard.Designer.cs">
+      <DependentUpon>Grenada Team Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grenada Team Progress Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenada Team Progress Report.Designer.cs">
+      <DependentUpon>Grenada Team Progress Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grenada Team.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenada Team.Designer.cs">
+      <DependentUpon>Grenada Team.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grenfin CoachAtten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenfin CoachAtten.Designer.cs">
+      <DependentUpon>Grenfin CoachAtten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grenfin Coaches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenfin Coaches.Designer.cs">
+      <DependentUpon>Grenfin Coaches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grenfin Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenfin Dashboard.Designer.cs">
+      <DependentUpon>Grenfin Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grenfin Progress Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenfin Progress Report.Designer.cs">
+      <DependentUpon>Grenfin Progress Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grenfin Student Finance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenfin Student Finance.Designer.cs">
+      <DependentUpon>Grenfin Student Finance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grenfin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grenfin.Designer.cs">
+      <DependentUpon>Grenfin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Form.Designer.cs">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MY_DB.cs" />
+    <Compile Include="Pool Maintenance List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pool Maintenance List.Designer.cs">
+      <DependentUpon>Pool Maintenance List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pool Maintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pool Maintenance.Designer.cs">
+      <DependentUpon>Pool Maintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POOLMAINTENANCE.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Progress Report List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress Report List.Designer.cs">
+      <DependentUpon>Progress Report List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress Report.Designer.cs">
+      <DependentUpon>Progress Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sailfish Assessments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sailfish Assessments.Designer.cs">
+      <DependentUpon>Sailfish Assessments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sailfish CoachAtten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sailfish CoachAtten.Designer.cs">
+      <DependentUpon>Sailfish CoachAtten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sailfish Coaches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sailfish Coaches.Designer.cs">
+      <DependentUpon>Sailfish Coaches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sailfish Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sailfish Dashboard.Designer.cs">
+      <DependentUpon>Sailfish Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sailfish Progress Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sailfish Progress Report.Designer.cs">
+      <DependentUpon>Sailfish Progress Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sailfish Student Finance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sailfish Student Finance.Designer.cs">
+      <DependentUpon>Sailfish Student Finance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sailfish Swimmers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sailfish Swimmers.Designer.cs">
+      <DependentUpon>Sailfish Swimmers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sailfish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sailfish.Designer.cs">
+      <DependentUpon>Sailfish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen.Designer.cs">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Finance List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Finance List.Designer.cs">
+      <DependentUpon>Student Finance List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Finance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Finance.Designer.cs">
+      <DependentUpon>Student Finance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENTFINANCE.cs" />
+    <Compile Include="STUDENTPROG.cs" />
+    <Compile Include="Swimmer List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Swimmer List.Designer.cs">
+      <DependentUpon>Swimmer List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SWIMMER.cs" />
+    <EmbeddedResource Include="Add Coach Attendance.resx">
+      <DependentUpon>Add Coach Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add New Coach.resx">
+      <DependentUpon>Add New Coach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Swimmer.resx">
+      <DependentUpon>Add Swimmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Assessment.resx">
+      <DependentUpon>Add Assessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assessment List.resx">
+      <DependentUpon>Assessment List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coach Attendance List.resx">
+      <DependentUpon>Coach Attendance List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coaches Form.resx">
+      <DependentUpon>Coaches Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dolphin CoachAtten.resx">
+      <DependentUpon>Dolphin CoachAtten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dolphin Coaches.resx">
+      <DependentUpon>Dolphin Coaches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dolphin Dashboard.resx">
+      <DependentUpon>Dolphin Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dolphin Progress Report.resx">
+      <DependentUpon>Dolphin Progress Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dolphin Student Finance.resx">
+      <DependentUpon>Dolphin Student Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dolphin.resx">
+      <DependentUpon>Dolphin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Remove Student Finance.resx">
+      <DependentUpon>Edit Remove Student Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Remove Swimmer.resx">
+      <DependentUpon>Edit Remove Swimmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Remove_Coach.resx">
+      <DependentUpon>Edit_Remove_Coach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenada Team CoachAtten.resx">
+      <DependentUpon>Grenada Team CoachAtten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenada Team Coaches.resx">
+      <DependentUpon>Grenada Team Coaches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenada Team Dashboard.resx">
+      <DependentUpon>Grenada Team Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenada Team Progress Report.resx">
+      <DependentUpon>Grenada Team Progress Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenada Team.resx">
+      <DependentUpon>Grenada Team.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenfin CoachAtten.resx">
+      <DependentUpon>Grenfin CoachAtten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenfin Coaches.resx">
+      <DependentUpon>Grenfin Coaches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenfin Dashboard.resx">
+      <DependentUpon>Grenfin Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenfin Progress Report.resx">
+      <DependentUpon>Grenfin Progress Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenfin Student Finance.resx">
+      <DependentUpon>Grenfin Student Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grenfin.resx">
+      <DependentUpon>Grenfin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Form.resx">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pool Maintenance List.resx">
+      <DependentUpon>Pool Maintenance List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pool Maintenance.resx">
+      <DependentUpon>Pool Maintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress Report List.resx">
+      <DependentUpon>Progress Report List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress Report.resx">
+      <DependentUpon>Progress Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sailfish Assessments.resx">
+      <DependentUpon>Sailfish Assessments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sailfish CoachAtten.resx">
+      <DependentUpon>Sailfish CoachAtten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sailfish Coaches.resx">
+      <DependentUpon>Sailfish Coaches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sailfish Dashboard.resx">
+      <DependentUpon>Sailfish Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sailfish Progress Report.resx">
+      <DependentUpon>Sailfish Progress Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sailfish Student Finance.resx">
+      <DependentUpon>Sailfish Student Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sailfish Swimmers.resx">
+      <DependentUpon>Sailfish Swimmers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sailfish.resx">
+      <DependentUpon>Sailfish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Screen.resx">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Finance List.resx">
+      <DependentUpon>Student Finance List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Finance.resx">
+      <DependentUpon>Student Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Swimmer List.resx">
+      <DependentUpon>Swimmer List.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash screen.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
