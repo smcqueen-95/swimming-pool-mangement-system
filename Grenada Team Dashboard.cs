@@ -63,5 +63,10 @@ namespace Swimming_Pool_Management_System
             Login_Form login = new Login_Form();
             login.Show();
         }
+
+        private void Grenada_Team_Dashboard_Load(object sender, EventArgs e)
+        {
+            labelUser.Text = GLOBAL.userType;
+        }
     }
 }
