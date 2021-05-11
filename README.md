@@ -97,4 +97,4 @@ Software Developer and aspiring Game Developer
 The porject is no longer available due to the backend but the frontend can still be used
 
 - Download code as Zip file
-- Clone using Github Desktop or Clone using terminal is code editor
+- Clone using Github Desktop or Clone using terminal in code editor
