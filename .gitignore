@@ -5,8 +5,6 @@
 # Logs
 Logs/
 
-assets
-
 # Generated files
 project.lock.json
 .vs/
