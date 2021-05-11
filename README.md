@@ -12,7 +12,7 @@ Software Developer and aspiring Game Developer
 
 # Swimming Pool Managment System Project
 
-![Picture1](./assets/images/picture1.png)
+![Picture1](assets/images/Picture1.png)
 
 ![Picture2](./assets/images/picture2.png)
 
