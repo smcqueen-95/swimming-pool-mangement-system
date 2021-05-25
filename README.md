@@ -89,7 +89,7 @@ Software Developer and aspiring Game Developer
 
 # Backend Built With
 
-- MySQL Qorkbench
+- MySQL Workbench
 - MyPHPAdmin
 
 # Project setup
